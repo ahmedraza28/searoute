@@ -5,7 +5,7 @@ const rhumbDistance = require('@turf/rhumb-distance').default;
 const pointToLineDistance = require('@turf/point-to-line-distance').default;
 
 const RouteFinder = require('geojson-path-finder');
-const marnet = require('./data/marnet_densified.json');
+const marnet = require('./data/output.json');
 const routefinder = new RouteFinder(marnet);
 
 module.exports = function searoute(origin, destination, units = 'nm') {
